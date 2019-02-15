@@ -79,5 +79,3 @@ man/*.1.gz
 # profile data
 /prof
 
-# vendored files
-/vendor

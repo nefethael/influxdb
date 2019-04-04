@@ -66,7 +66,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:6eeb95509dbdb79ee2624f83fd9d8163e01f28cdce5cade110c048b0224cf2f4"
+  digest = "1:4c65d504ca4d20db4c77d05b3abd25f30d0536114417eac172ad470e5581617e"
   name = "github.com/apache/arrow"
   packages = [
     "go/arrow",
@@ -78,7 +78,7 @@
     "go/arrow/memory",
   ]
   pruneopts = "UT"
-  revision = "c6d97c59ef047cc9d5e2836b1945df26cd7c4622"
+  revision = "f5df77359953ed06e1dce47edffc03340e2ff3ea"
 
 [[projects]]
   branch = "master"
@@ -466,16 +466,23 @@
   revision = "32c6aa80de5eb09d190ad284a8214a531c6bce57"
 
 [[projects]]
-  digest = "1:648b66ad037b167a0eedb199f8088fa4e4d1142a39d4fc4dcd7f40f07e23482d"
+  digest = "1:211733975798a6f796a57d0f1bd3e3be2f8ada48c6d3289b98fefa6345a76fbf"
   name = "github.com/influxdata/platform"
   packages = [
     ".",
     "logger",
     "models",
     "pkg/binaryutil",
+    "pkg/bloom",
     "pkg/bytesutil",
+    "pkg/data/gen",
+    "pkg/encoding/simple8b",
     "pkg/escape",
+    "pkg/file",
+    "pkg/limiter",
+    "pkg/metrics",
     "pkg/mmap",
+    "pkg/pool",
     "pkg/rhh",
     "pkg/slices",
     "pkg/snowflake",
@@ -486,8 +493,11 @@
     "telegraf/plugins",
     "telegraf/plugins/inputs",
     "telegraf/plugins/outputs",
+    "toml",
     "tsdb",
     "tsdb/cursors",
+    "tsdb/tsi1",
+    "tsdb/tsm1",
   ]
   pruneopts = "UT"
   revision = "0f79e4ea3248354c789cba274542e0a8e55971db"
@@ -802,6 +812,14 @@
   version = "v0.2.0"
 
 [[projects]]
+  digest = "1:08d65904057412fc0270fc4812a1c90c594186819243160dc779a402d4b6d0bc"
+  name = "github.com/spf13/cast"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8c9545af88b134710ab1cd196795e7f2388358d7"
+  version = "v1.3.0"
+
+[[projects]]
   digest = "1:eaa6698f44de8f2977e93c9b946e60a8af75f565058658aad2df8032b55c84e5"
   name = "github.com/tinylib/msgp"
   packages = ["msgp"]
@@ -1093,6 +1111,7 @@
     "github.com/influxdata/flux/values",
     "github.com/influxdata/influxql",
     "github.com/influxdata/platform/models",
+    "github.com/influxdata/platform/pkg/data/gen",
     "github.com/influxdata/platform/query/functions/inputs/storage",
     "github.com/influxdata/platform/storage/reads",
     "github.com/influxdata/platform/storage/reads/datatypes",
@@ -1110,6 +1129,7 @@
     "github.com/prometheus/client_golang/prometheus",
     "github.com/prometheus/client_golang/prometheus/promhttp",
     "github.com/retailnext/hllpp",
+    "github.com/spf13/cast",
     "github.com/tinylib/msgp/msgp",
     "github.com/xlab/treeprint",
     "go.uber.org/zap",

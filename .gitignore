@@ -80,4 +80,4 @@ man/*.1.gz
 /prof
 
 # vendored files
-/vendor
+#/vendor
